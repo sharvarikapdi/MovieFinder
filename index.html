@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/movie-search-page.css">
+		<script type="text/javascript" src="js/mainPage.js"></script>
+	</head>
+	<body onload="getDefaultData()">
+		<header class="header">
+			<h1>Movie Finder</h1>
+		</header> 
+		<div>
+			<div class="searchBar">
+				<input type="text" id="search-box" onkeyup="searchMovie(this.value)" placeholder="Enter atleast 3 letters to search a movie!">
+			</div>
+
+			<div class="moviesList">
+				<div id="sortMoviesByHolder">
+					<span>Sort by </span>
+					<select id="moview-sort" onchange="sortMoviesBy(this.value)">
+						<option value="title" selected>Title</option>
+						<option value="year">Year</option>
+					</select>
+				</div>
+				<div class="row" id="searchResult">
+
+				</div>
+				<div class="myListSection">
+					<div class="myListSectionHeader"><h2>My Movie List</h2></div>
+					<div id="myList">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

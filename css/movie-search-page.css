@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+.searchBar{
+    height: 50px;
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+#search-box {
+    height: 40px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 8px;
+}
+#sortMoviesByHolder {
+    float: right;
+    margin-right: 12px;
+}
+/* Center website */
+.moviesList {
+    max-width: 1000px;
+    margin: auto;
+}
+.myListSection {
+    float: left;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 4px;
+}
+.myListSectionHeader {
+    padding: 0px 8px;
+}
+.header h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    position: relative;
+}
+ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+.column img {
+    height: 450px;
+    width: 100%;
+}
+.column h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.movie-button {
+    right: 16px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1240px) {
+    .column {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+    .column img{
+        height: 250px;
+        width: 100%;
+    }
+}
